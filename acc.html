@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <link rel="stylesheet" href="acc.css">  
+        <link rel="stylesheet" href="layout.css">  
+        <link rel="stylesheet" href="/node_modules/flag-icons/css/flag-icons.css"> 
+        <link rel="stylesheet" href="/node_modules/flag-icons/css/flag-icons.min.css">
+        <script src="https://kit.fontawesome.com/323156e8d4.js" crossorigin="anonymous"></script>
+        <!-- <script src="component/layout.js" type="text/javascript" defer></script> -->
+        <!-- <script data-main="scripts/main" src="scripts/require.js"></script>     -->
+    </head>
+    <body>   
+        <header>
+            <image src="nomadrental-logo.png"></image>
+            <span>Choose a city<i class="fa-solid fa-bars"></i></span>               
+        </header>
+        <div class="layout">
+            <div class="sidebar">
+                <div class="name">
+                    <span>JD</span>               
+                </div>
+                <div class="detail">
+                    <p id="username">John Doe</p>
+                    <p id="membership">Premium Nomad</p>
+                </div>
+                <a href="/booking.html">
+                    <div class="option">
+                        <i class="fa-solid fa-inbox"></i>
+                        <p>Bookings</p>
+                    </div>
+                </a>
+                <div class="option">
+                    <i class="fa-solid fa-bed"></i>
+                    <p>Refer and Earn</p>
+                </div>
+                <a href="/acc.html">
+                    <div class="option">
+                        <i class="fa-solid fa-user-gear"></i>
+                        <p>Account Settings</p>
+                    </div>
+                </a>
+                <p class="title">Support</p>
+                <div class="option">
+                    <i class="fa-solid fa-life-ring"></i>
+                    <p>Contact us</p>
+                </div>
+                <div class="option">
+                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                    <p>FAQ</p>
+                </div>
+                <div class="sign-out">
+                    <label class="switch">
+                        <input type="checkbox">
+                        <span class="slider round"></span>
+                    </label>
+                    <p>Sign Out</p>
+                </div>
+            </div>
+            <div class="content">
+                <h1>Account</h1>
+                <h4>Your current upcoming stays</h4>
+                <p>Please update with the properity if your travel plans should change or if you wish to make any changes to your stay.</p>
+                <a href=""><i class="fa-solid fa-chevron-right fa-xs"></i>Learn more about our premium subscription</a>
+                <div class="form-box">
+                        <table class="name-table">
+                            <tr>
+                                <th class="user-edit" rowspan="2">
+                                    <i class="fa-solid fa-user-pen fa-2x"></i>
+                                </th>
+                                <th class="table-name">John Doe</th>        
+                            </tr>
+                            <tr><td>Please make sure these details are up to date as they’ll be used for your bookings, and communications with the hotels.</td></tr>                            
+                        </table>
+                        <form action="/acc.html">
+                            <table class="form-table">
+                                <tr>
+                                    <td><label class="name-label">Your Name</label> <input type="text" id="name" placeholder="Enter your name" required/></td>
+                                    <td><label class="email-label">Email address</label> <input type="" id="email" placeholder="Enter your email" required/></td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <label class="country-label">Country</label> 
+                                        <select aria-placeholder="Select an option">
+                                            <option value="1">Thailand</option>
+                                            <option value="2">Singapore</option>
+                                            <option value="3">Malaysia</option>
+                                        </select>
+                                    </td>
+                                    <td>
+                                        <label class="country-code-label">Country code</label> 
+                                        <select class="country-code" aria-placeholder="Select an option">
+                                            <option value="1">+66</option>
+                                            <option value="2">+65</option>
+                                            <option value="3">+60</option>
+                                        </select>
+                                        <input type="number" id="hp-no" placeholder="(0) 053 555 555" required/>                                
+                                    </td>
+                                </tr>
+                            </table>
+                            <table class="password-table">
+                                <tr>
+                                    <td>
+                                        <label class="pw-label">Current Password<span><a href="">Forgot?</a></span></label>
+                                        <input type="password" id="password" placeholder="Password" required/>
+                                    </td>
+                                    <td>
+                                        <label class="pw-label">New Password</label>
+                                        <input type="password" class="password" placeholder="Password" required/>
+                                    </td>
+                                </tr>
+                                <tr class="update">
+                                    <td></td>
+                                    <td>
+                                        <p>Your data will be <span><a href=""> handled by care</a></span></p>
+                                        <input class="btn" type="submit" value="Update"/>
+                                    </td>
+                                </tr>
+                            </table>                          
+                            
+                        </form>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

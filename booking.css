@@ -1,0 +1,86 @@
+.room{
+    background-color: white;
+    border-radius: 4px;
+    box-shadow: 2px 2px 2px 2px rgb(228, 223, 223);
+    display: grid;
+    grid-template-columns: 30% 70%;
+    grid-template-rows: 70% 15% 15%;
+    grid-template-areas: 
+      "image details"
+      "image rate"
+      "image email" ;
+    margin-bottom: 3em;
+}
+
+.room img{
+    grid-area: image;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.room-details{
+    grid-area: details;
+}
+
+.rate{
+    grid-area: rate;
+    margin: 0;
+}
+
+.email{
+    grid-area: email;
+    margin: 0;
+}
+
+.room-details{
+    padding: 2em 3em;
+}
+
+.room-details h4{
+    font-weight: bold;
+}
+
+.room p i{
+    padding-right: 10px;
+}
+
+.room-details .waiting{
+    color: #7C60FF;
+    padding-bottom: 14px;
+    border-bottom: 1px solid #F5F6F7;
+}
+
+.room-details .superior{
+    font-weight: normal;
+}
+
+.room-details table{
+    width: 100%;
+}
+
+.room-details table .icon{
+    width: 5%;
+    vertical-align: top;
+    text-align:left;
+}
+
+.room-details table .title{
+    width: 40%;
+    text-align: left;
+}
+
+.room-details .details-bold{
+    font-weight: bold;
+    color: #262626;
+}
+
+.rate,.email{
+    background-color: #F5F6F7;
+    padding: 2em 3em;
+    font-weight: bold;
+}
+
+.rate{
+    color: #42B72A;
+}
